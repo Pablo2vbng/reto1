@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mercado La Alhóndiga</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="header-nav">
+            <a class="header-nav__link" href="inicio.html" class="header-container__logo">
+                <img src="img/logo.png" alt="Logo del Mercado La Alhóndiga" class="header-nav__logo">
+            </a>
+            <h1 class="header-nav__title">La Albóndiga. Carnicería selecta</h1>
+            <ul class="header-nav-list">
+                <li class="header-nav-list-item"><a class="header-nav-list-item__list" href="puestos.html"><span class="material-symbols-outlined" aria-label ="staff-button">work</span></a>
+                </li>
+                <li class="header-nav-list-item"><a class="header-nav-list-item__list" href="inicio.html"><span class="material-symbols-outlined" aria-label="home-button">home</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <main>
+        <!-- CONTACT FORM -->
+        <form class="contact-form" action="contacto_enviado.html" method="post">
+            <h1 class="contact-form__title">Formulario de contacto</h1>
+
+            <div class="contact-form-group">
+                <label class="contact-form__label" for="fullName">Nombre Completo</label><br>
+                <input class="contact-form__input" type="text" id="fullName" name="fullName" placeholder="Tu nombre"
+                    required>
+            </div>
+
+            <div class="contact-form-group">
+                <label class="contact-form__label" for="email">Correo Electrónico</label><br>
+                <input class="contact-form__input" type="email" id="email" name="email" placeholder="tu@ejemplo.com"
+                    required>
+            </div>
+
+            <div class="contact-form-group">
+                <label class="contact-form__label" for="subject">Asunto</label><br>
+                <input class="contact-form__input" type="text" id="subject" name="subject"
+                    placeholder="Tema de tu mensaje">
+            </div>
+
+            <div class="contact-form-group">
+                <label class="contact-form__label" for="message">Tu Mensaje</label><br>
+                <textarea class="contact-form__input" id="message" name="message"
+                    placeholder="Escribe aquí tu mensaje..." rows="4" required></textarea>
+            </div>
+
+            <fieldset class="contact-form-fieldset">
+                <legend class="contact-form-fieldset__legend">¿Qué te gusta más?</legend>
+                <div class="contact-form-radio-option">
+                    <input class="contact-form-radio-option__input" type="radio" id="longaniza" name="embutido"
+                        value="longaniza">
+                    <label class="contact-form-radio-option__label" for="longaniza">Longaniza</label>
+                </div>
+                <div class="contact-form-radio-option">
+                    <input class="contact-form-radio-option__input" type="radio" id="botifarra" name="embutido"
+                        value="botifarra">
+                    <label class="contact-form-radio-option__label" for="botifarra">Botifarra</label>
+                </div>
+                <div class="contact-form-radio-option">
+                    <input class="contact-form-radio-option__input" type="radio" id="chorizo" name="embutido"
+                        value="chorizo">
+                    <label class="contact-form-radio-option__label" for="chorizo">Chorizo</label>
+                </div>
+                <div class="contact-form-radio-option">
+                    <input class="contact-form-radio-option__input" type="radio" id="chistorra" name="embutido"
+                        value="chistorra">
+                    <label class="contact-form-radio-option__label" for="chistorra">Chistorra</label>
+                </div>
+            </fieldset>
+
+            <div class="contact-form-checkbox">
+                <input class="contact-form-checkbox__input" type="checkbox" id="privacy" name="privacy" required>
+                <label class="contact-form-checkbox__label" for="privacy">Acepto el aviso de privacidad</label>
+            </div>
+
+            <button class="contact-form-button__submit" type="submit">Enviar Mensaje</button>
+        </form>
+        <!-- END CONTACT FORM -->
+    </main>
+    <!-- FOOTER -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-comments">
+            <img class="footer-comments__img" src="img/google.png" alt="Logo de Google">
+            <p class="footer-comments__text">Deja tu valoración en Google</p>
+        </div>
+        <div class="footer-social-network">
+            <img src="img/facebook.png" alt="logo facebook" class="footer-social-network__img">
+            <img src="img/twitter.png" alt="logo twitter" class="footer-social-network__img">
+            <img src="img/Instagram.png" alt="logo instagram" class="footer-social-network__img">
+        </div>
+        <div class="footer-politics">
+            <ul class="footer-politics-list">
+                <li class="footer-politics-list-item"><a href="#" class="politics-list-item__link">Política de
+                        cookies</a></li>
+                <li class="footer-politics-list-item"><a href="#" class="politics-list-item__link">Sostenibilidad</a>
+                </li>
+                <li class="footer-politics-list-item"><a href="#" class="politics-list-item__link">Aviso legal</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <div class="sub-footer-all-rights">
+        <p class="sub-footer-all-rights-comments__text">2025 Pablo Vidal Vidal.Todos los derechos reservados</p>
+    </div>
+    <!--END FOOTER -->
+</body>
+
+</html>
